@@ -8,6 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bde632c9-e954-47be-89bc-4dde045bc4a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -87,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727452993660</updated>
       <workItem from="1727452996354" duration="19000" />
-      <workItem from="1727453028871" duration="2029000" />
+      <workItem from="1727453028871" duration="3423000" />
     </task>
     <servers />
   </component>
