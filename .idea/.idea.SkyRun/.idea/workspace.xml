@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bde632c9-e954-47be-89bc-4dde045bc4a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" afterDir="false" />
-    </list>
+    <list default="true" id="bde632c9-e954-47be-89bc-4dde045bc4a6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727452993660</updated>
       <workItem from="1727452996354" duration="19000" />
-      <workItem from="1727453028871" duration="3423000" />
+      <workItem from="1727453028871" duration="3517000" />
     </task>
     <servers />
   </component>
