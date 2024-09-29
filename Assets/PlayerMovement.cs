@@ -1,31 +1,52 @@
 #region
 
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 #endregion
 
+// Using simple actions with callbacks.
 public class PlayerMovement : MonoBehaviour {
-    public float forwardBackwardForcePerSecond = 2000f;
-    public float sidewaysForcePerSecond = 1500f;
-    public float jumpForcePerSecond = 100f;
-    private Rigidbody _rb;
+    public float moveSpeed;
+    public float rotateSpeed;
 
-    private void Start() {
-        _rb = GetComponent<Rigidbody>();
+    public InputAction moveAction;
+    public InputAction lookAction;
+
+    private Vector2 m_Rotation;
+
+    public void Update() {
+        // var look = lookAction.ReadValue<Vector2>();
+        var move = moveAction.ReadValue<Vector2>();
+
+        // Update orientation first, then move. Otherwise move orientation will lag
+        // behind by one frame.
+        // Look(look);
+        Move(move);
     }
 
-    private void Update() {
-        if (Input.GetKey(KeyCode.W)) _rb.AddForce(Vector3.forward * (forwardBackwardForcePerSecond * Time.deltaTime));
-        if (Input.GetKey(KeyCode.S)) _rb.AddForce(Vector3.forward * -(forwardBackwardForcePerSecond * Time.deltaTime));
-        if (Input.GetKey(KeyCode.A)) _rb.AddForce(Vector3.left * (sidewaysForcePerSecond * Time.deltaTime));
-        if (Input.GetKey(KeyCode.D)) _rb.AddForce(Vector3.right * (sidewaysForcePerSecond * Time.deltaTime));
+
+    public void OnEnable() {
+        moveAction.Enable();
+        lookAction.Enable();
     }
 
-    private void OnCollisionStay(Collision other) {
-        Debug.Log("Collision Stay");
-        if (Input.GetKey(KeyCode.Space)) {
-            Debug.Log("JUMP");
-            _rb.AddForce(Vector3.up * (jumpForcePerSecond * Time.deltaTime));
-        }
+    public void OnDisable() {
+        moveAction.Disable();
+        lookAction.Disable();
+    }
+
+    private void Move(Vector2 direction) {
+        if (direction.sqrMagnitude < 0.01)
+            return;
+        var scaledMoveSpeed = moveSpeed * Time.deltaTime;
+        // For simplicity's sake, we just keep movement in a single plane here. Rotate
+        // direction according to world Y rotation of player.
+        var move = Quaternion.Euler(0, transform.eulerAngles.y, 0) * new Vector3(direction.x, 0, direction.y);
+        transform.position += move * scaledMoveSpeed;
+    }
+
+    private void Look(Vector2 rotate) {
+        
     }
 }
