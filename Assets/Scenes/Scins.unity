@@ -768,7 +768,6 @@ GameObject:
   - component: {fileID: 1070959284}
   - component: {fileID: 1070959288}
   - component: {fileID: 1070959291}
-  - component: {fileID: 1070959290}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -889,45 +888,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1070959290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070959283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 57a54c9d006b18f419b1347b40474422,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 50fd2809-3aa3-4a90-988e-1facf6773553
-    m_ActionName: gameplay/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c60e0974-d140-4597-a40e-9862193067e9
-    m_ActionName: gameplay/look
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: gameplay
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &1070959291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,8 +900,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0923a5a14f884859a39872d225d9c72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 50
+  moveSpeed: 500
   rotateSpeed: 60
+  moveAction:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: bd860887-2c93-4bee-944b-a1e1c7fdb355
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: movement
+      m_Id: 6dcfdcbd-8f86-44ae-9cba-4eb412379352
+      m_Path: 3DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: forward
+      m_Id: 1e21ffbf-f5fd-4ee4-a66a-cbf01e81d873
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: backward
+      m_Id: 4bc6a0ea-cc99-406f-8d34-4588080fc011
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Left
+      m_Id: 72f97e43-9b07-4816-952c-6c65b4f2459a
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Right
+      m_Id: d4287b48-7531-4bc5-ad16-cc1c4b80b623
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: up
+      m_Id: d08ba9a7-3e29-4c5a-a317-739cce7bd5e9
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: a9e58531-bfa7-4e20-92cf-fe17eaaeb13e
+      m_Path: <Keyboard>/leftCtrl
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    m_Flags: 0
+  lookAction:
+    m_Name: Look
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6b3ddb1b-22be-4632-81e8-845052b91959
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: maus
+      m_Id: 54edf929-935e-4a3d-aef7-3763829f05d6
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look
+      m_Flags: 4
+    - m_Name: Up
+      m_Id: 787a2fae-834c-42cc-b3d1-5259620ccd46
+      m_Path: <Pointer>/delta/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: Down
+      m_Id: 97c09a3b-c88d-41a2-b74b-aa115b527d70
+      m_Path: <Pointer>/delta/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: Left
+      m_Id: 54dd2270-d6c4-429a-a5bc-caf32f77cab9
+      m_Path: <Pointer>/delta/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: Right
+      m_Id: b3e880e7-4856-448b-9456-d49ae3c67d88
+      m_Path: <Pointer>/delta/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Look
+      m_Flags: 8
+    m_Flags: 0
 --- !u!1 &1394256993
 GameObject:
   m_ObjectHideFlags: 0

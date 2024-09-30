@@ -9,16 +9,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bde632c9-e954-47be-89bc-4dde045bc4a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleControls.inputactions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleControls.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +114,10 @@
       <workItem from="1727542509931" duration="274000" />
       <workItem from="1727622850869" duration="1184000" />
       <workItem from="1727624086405" duration="2622000" />
-      <workItem from="1727626809270" duration="440000" />
+      <workItem from="1727626809270" duration="1268000" />
+      <workItem from="1727709155811" duration="27000" />
+      <workItem from="1727709189964" duration="482000" />
+      <workItem from="1727710021902" duration="770000" />
     </task>
     <servers />
   </component>
