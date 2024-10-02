@@ -9,11 +9,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bde632c9-e954-47be-89bc-4dde045bc4a6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SkyRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scins.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SimpleControls.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SimpleControls.inputactions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TheController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TheController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -118,6 +120,8 @@
       <workItem from="1727709155811" duration="27000" />
       <workItem from="1727709189964" duration="482000" />
       <workItem from="1727710021902" duration="770000" />
+      <workItem from="1727854141680" duration="22000" />
+      <workItem from="1727854172660" duration="657000" />
     </task>
     <servers />
   </component>
